@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>신상품 목록</title>
+  <style>
+    h1{text-align:center;}
+    #container {width:1000px; margin:0 auto;}
+    .prod-list { list-style: none; margin:0; padding:0;}
+    .prod-list li {position: relative; float:left; padding:0; margin:10px;
+                   overflow:hidden;}/*overflow속성으로 가격caption이 더 자연스럽게 올라옴*/
+
+    .prod-list img { margin:0; padding: 0; float:left; z-index:5;}
+    .prod-list .caption {position:absolute; top:200px; width:300px;
+                        height:180px; padding-top:20px;
+                        background:rgba(0,0,0,.6);
+                        opacity:0;
+                        transition: all 0.2s ease-in;
+                        z-index:10;
+                        }
+    .prod-list li:hover .caption { opacity:1;
+                                   transform: translateY(-200px);
+                                   }      
+    .prod-list li .caption h1, .prod-list li .caption p { color: #fff;
+                                                          text-align: center;}                                 
+
+
+  </style>
+</head>
+<body>
+  <h1>신상품 목록</h1>
+  <div id="container">
+    <ul class="prod-list">
+      <li>
+        <img src="images/prod1.jpg" alt="상품1">
+        <div class="caption">
+          <h1>상품1</h1>
+          <p>상품1 설명 텍스트</p>
+          <p>가격: 12,000원</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/prod2.jpg" alt="상품2">
+        <div class="caption">
+          <h1>상품2</h1>
+          <p>상품2 설명 텍스트</p>
+          <p>가격: 12,000원</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/prod3.jpg" alt="상품3">
+        <div class="caption">
+          <h1>상품3</h1>
+          <p>상품3 설명 텍스트</p>
+          <p>가격: 12,000원</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

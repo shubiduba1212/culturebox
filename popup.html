@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture Box-popup</title>
+  <style>
+    p { position:relative;}
+    button { position:absolute; top:300px; left:140px;
+              padding: 10px 15px;
+             font-size: 18px;
+             font-weight:800;
+            background: rgba(3,3,3,0.8);
+            color:rgb(255,255,255);
+            border:0;
+            border-radius:15px;
+            outline:none;
+            cursor:pointer}
+    button:hover { background: rgb(255,255,255);
+                    color: rgb(3,3,3);}        
+  </style>
+</head>
+<body>
+  <p>
+    <img src="img/popup.png" alt="" usemap="#intro">
+    <map name="intro" id="intro">
+      <area shape="rect" coords="0,0,0,0" href="#" alt="창닫기" onclick="window.close();">
+    </map>
+    <button>회원가입</button>
+  </p>
+  
+</body>
+</html>
